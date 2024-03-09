@@ -1,0 +1,74 @@
+{
+  "pages": [  
+    "pages/demo13/demo13",
+    "pages/demo10/demo10",    
+    "pages/demo12/demo12",
+    "pages/demo11/demo11",     
+    "pages/demo14/demo14",  
+    "pages/demo15/demo15",    
+    "pages/demo16/demo16",             
+    "pages/demo09/demo09",  
+    "pages/demo08/demo08",   
+    "pages/demo18/demo18",
+    "pages/demo17/demo17",       
+    "pages/demo0/demo0",    
+    "pages/demo07/demo07",   
+    "pages/demo06/demo06",    
+    "pages/demo05/demo05",   
+    "pages/demo04/demo04",   
+    "pages/demo03/demo03",   
+    "pages/demo02/demo02", 
+    "pages/demo01/demo01", 
+    "pages/index/index",  
+    "pages/img/img",
+    "pages/mine/mine", 
+    "pages/search/search",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#0094ff",
+    "navigationBarTitleText": "我的应用",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "icon/_home.png",
+        "selectedIconPath": "icon/home.png"
+      },
+      {
+        "pagePath": "pages/img/img",
+        "text": "图片",
+        "iconPath": "icon/_img.png",
+        "selectedIconPath": "icon/img.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "icon/_my.png",
+        "selectedIconPath": "icon/my.png"
+      },
+      {
+        "pagePath": "pages/search/search",
+        "text": "搜索",
+        "iconPath": "icon/_search.png",
+        "selectedIconPath": "icon/search.png"
+      },
+      {
+        "pagePath": "pages/demo18/demo18",
+        "text": "demo18",
+        "iconPath": "icon/_search.png",
+        "selectedIconPath": "icon/search.png"
+      }
+    ],
+    "color":"#0094ff",
+    "selectedColor":"#ff9400",
+    "backgroundColor":"#ff5533",
+    "position":"top"
+  },
+  "sitemapLocation": "sitemap.json"
+}

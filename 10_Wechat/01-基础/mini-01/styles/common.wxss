@@ -1,0 +1,4 @@
+view{
+  color: aqua;
+  font-size: 50px;
+}

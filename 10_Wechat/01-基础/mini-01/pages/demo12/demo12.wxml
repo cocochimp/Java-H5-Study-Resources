@@ -1,0 +1,8 @@
+
+<!-- 
+  rich-text 富文本标签
+  1 nodes属性来实现
+    1 接收标签字符串 
+    2 接收对象数组 
+ -->
+ <rich-text nodes="{{html}}"></rich-text>

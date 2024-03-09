@@ -1,0 +1,4 @@
+# 在我们这配置文件中配置的东西，都存在一个固有规律
+# xxxAutoConfiguration:默认值 ——> xxxProperties 和 配置文件绑定，我们就可以使用自定义的配置了！
+server:
+  port:

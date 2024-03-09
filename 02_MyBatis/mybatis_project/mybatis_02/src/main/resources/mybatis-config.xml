@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="GBK" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<!--configuration core file-->
+<configuration>
+    <!--1、properties-->
+    <properties resource="db.properties"/>
+
+<!--    &lt;!&ndash;可以给实体类起别名&ndash;&gt;-->
+<!--    <typeAliases>-->
+<!--        <typeAlias type="com.koko.pojo.User" alias="User"/>-->
+<!--    </typeAliases>-->
+
+    <!--可以给实体类起别名-->
+    <typeAliases>
+        <package name="com.koko.pojo"/>
+    </typeAliases>
+
+    <!--2、environments-->
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+
+    <!--3、mappers-->
+    <mappers>
+        <mapper resource="com/koko/dao/UserMapper.xml"/>
+    </mappers>
+</configuration>

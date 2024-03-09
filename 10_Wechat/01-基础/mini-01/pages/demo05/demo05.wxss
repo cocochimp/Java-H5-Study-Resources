@@ -1,0 +1,33 @@
+
+/* 
+1 小程序中 不需要主动来引入样式文件 
+2 需要把页面中某些元素的单位 由 px 改成 rpx
+  1 设计稿 750x
+    750 px = 750 rpx 
+    1 px = 1 rpx
+  2 把屏幕宽度 改成 375px
+    375 px = 750 rpx
+    1 px = 2rpx
+    1rpx = 0.5px
+3 存在一个设计稿 宽度 414 或者 未知 page 
+  1 设计稿 page 存在一个元素 宽度 100px
+  2 拿以上的需求 去实现 不同宽度的页面适配 
+
+  page px = 750 rpx
+  1 px = 750 rpx / page
+  100 px = 750 rpx * 100 / page 
+  假设  page =  375px
+4 利用 一个属性 calc属性  css 和 wxss 都支持 一个属性
+  1 750 和 rpx 中间不要留空格
+  2 运算符的两边也不要留空格
+ */
+
+ view{
+   /* width: 200rpx; */
+   height: 200rpx;
+   font-size: 40rpx;
+   background-color: aqua;
+  /* 以下代码写法是错误  */
+  /*  width:750 rpx * 100 / 375 ;  */
+  width:calc(750rpx * 100 / 375);
+ }

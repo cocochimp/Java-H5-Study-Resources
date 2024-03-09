@@ -1,0 +1,52 @@
+
+<!-- 
+  button 标签
+  1 外观的属性
+    1 size 控制按钮的大小
+      1 default 默认大小
+      2 mini 小尺寸
+    2 type 用来控制按钮的颜色
+      1 default 灰色
+      2 primary 绿色
+      3 warn 红色
+    3 plain  按钮是否镂空，背景色透明
+    4 loading 文字前显示正在等待图标
+ -->
+ <button>默认按钮</button>
+ <button size="mini">  mini 默认按钮</button>
+ <button type="primary"> primary 按钮</button> 
+ <button type="warn"> warn 按钮</button> 
+ <button type="warn" plain> plain 按钮</button> 
+ <button type="primary" loading> loading 按钮</button> 
+
+ <!-- 
+
+  button 开发能力
+  open-type：
+  1 contact 直接打开  客服对话功能  需要在微信小程序的后台配置   只能够通过真机调试来打开 
+  2 share 转发当前的小程序 到微信朋友中   不能把小程序 分享到 朋友圈 
+  3 getPhoneNumber 获取当前用户的手机号码信息 结合一个事件来使用  不是企业的小程序账号 没有权限来获取用户的手机号码 
+    1 绑定一个事件 bindgetphonenumber 
+    2 在事件的回调函数中  通过参数来获取信息 
+    3 获取到的信息  已经加密过了 
+      需要用户自己待见小程序的后台服务器，在后台服务器中进行解析 手机号码，返回到小程序中 就可以看到信息了
+  4 getUserInfo 获取当前用户的个人信息
+    1 使用方法 类似 获取用户的手机号码
+    2 可以直接获取 不存在加密的字段 
+  5 launchApp 在小程序当中 直接打开 app
+    1 需要现在 app中 通过app的某个链接 打开 小程序
+    2 在小程序 中 再通过 这个功能 重新打开 app
+    3 找到 京东的app 和 京东的小程序  
+  6 openSetting 打开小程序内置的 授权页面
+    1 授权页面中 只会出现 用户曾经点击过的 权限 
+  7 feedback 打开 小程序内置的 意见反馈页面 
+    1 只能够通过真机调试来打开 
+
+  -->
+<button open-type="contact">contact</button>
+<button open-type="share">share</button>
+<button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">getPhoneNumber</button>
+<button open-type="getUserInfo" bindgetuserinfo="getUserInfo">getUserInfo</button>
+<button open-type="launchApp">launchApp</button>
+<button open-type="openSetting">openSetting</button>
+<button open-type="feedback">feedback</button>

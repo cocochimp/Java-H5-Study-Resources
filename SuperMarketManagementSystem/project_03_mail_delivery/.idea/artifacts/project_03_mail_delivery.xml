@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="javafx" build-on-make="true" name="project_03_mail_delivery">
+    <output-path>$PROJECT_DIR$/out/artifacts/project_03_mail_delivery</output-path>
+    <root id="root">
+      <element id="archive" name="project_03_mail_delivery.jar">
+        <element id="module-output" name="project_03_mail_delivery" />
+      </element>
+    </root>
+  </artifact>
+</component>

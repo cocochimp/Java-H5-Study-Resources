@@ -1,0 +1,14 @@
+<!-- 
+  radio 单选框
+  1 radio标签 必须要和 父元素 radio-group来使用
+  2 value 选中的单选框的值 
+  3 需要给 radio-group 绑定 change事件 
+  4 需要在页面中显示 选中的值
+ -->
+ <radio-group bindchange="handleChange">
+   <radio color="red" value="male">男</radio>
+   <radio color="red" value="female" >女</radio>
+ </radio-group>
+
+ <view>您选中的是:{{gender}}</view>
+   

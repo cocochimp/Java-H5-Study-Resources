@@ -1,0 +1,9 @@
+
+<!-- 
+  小程序中的字体图标
+  1 type 图标的类型
+    success|success_no_circle|info|warn|waiting|cancel|download|search|clear
+  2 size 大小 
+  3 color 图标的颜色
+ -->
+<icon  type="cancel" size="60" color="#0094ff"> </icon>

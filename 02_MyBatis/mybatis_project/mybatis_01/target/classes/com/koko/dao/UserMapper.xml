@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.koko.dao.UserMapper">
+
+    <!--SelectAll-->
+    <select id="getUserList" resultType="com.koko.pojo.User">
+        select * from mybatis.user
+    </select>
+
+    <!--select-->
+    <select id="getUserById" parameterType="int" resultType="com.koko.pojo.User">
+        select * from mybatis.user where id=#{id}
+    </select>
+
+    <!--insert-->
+    <insert id="addUser" parameterType="com.koko.pojo.User">
+        insert into mybatis.user (id,name,pwd) values (#{id},#{name},#{pwd})
+    </insert>
+
+    <!--update-->
+    <update id="updateUser" parameterType="com.koko.pojo.User">
+        update mybatis.user set name=#{name},pwd=#{pwd} where id = #{id}
+    </update>
+
+    <!--delete-->
+    <delete id="deleteUser" parameterType="int">
+        delete from mybatis.user where id = #{id}
+    </delete>
+
+    <!--map for insert-->
+    <insert id="addUser2" parameterType="map">
+        insert into mybatis.user (id,pwd) values (#{userid},#{password})
+    </insert>
+
+    <!--select-->
+    <select id="getUserLike" resultType="com.koko.pojo.User">
+        select * from mybatis.user where name like #{value}
+    </select>
+
+</mapper>

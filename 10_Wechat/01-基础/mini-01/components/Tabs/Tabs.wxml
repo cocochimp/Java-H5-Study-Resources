@@ -1,0 +1,27 @@
+<!-- 这是自定义组件的内部WXML结构 -->
+<view class="tabs">
+  <view class="tabs_title">
+    <!-- <view class="title_item active">首页</view>
+    <view class="title_item">原创</view>
+    <view class="title_item">分类</view>
+    <view class="title_item">关于</view> -->
+
+    <view 
+    wx:for="{{tabs}}"
+    wx:key="id"
+    class="title_item {{item.isActive?'active':''}}"
+    bindtap="hanldeItemTap"
+    data-index="{{index}}"
+    >
+    {{item.name}}
+  </view>
+  </view>
+  <view class="tabs_content">
+    <!-- 
+      slot 标签 其实就是一个占位符 插槽
+      等到 父组件调用 子组件的时候 再传递 标签过来 最终 这些被传递的标签
+      就会替换 slot 插槽的位置 
+     -->
+    <slot></slot>
+  </view>
+</view>
