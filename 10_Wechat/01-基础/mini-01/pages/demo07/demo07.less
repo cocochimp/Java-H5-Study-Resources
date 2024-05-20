@@ -1,0 +1,28 @@
+/* 1 定义less变量 */
+@color:yellow;
+text{
+  /* 2 使用变量 */
+  color:@color;
+}
+
+view{
+  .vie1{
+    text{
+      color: red;
+    }
+  }
+}
+
+/* 导入 */
+@import "../../styles/reset.less";
+view{
+  color: @themeColor;
+}
+.main{
+  /* 
+  1 less中 支持 两种注释  多行  单行
+  2 wxss 不能写 单行注释 因为 写了 和没写是一样！！！
+   */
+  /* font-size: 200px; */
+  // font-size: 400px;
+}

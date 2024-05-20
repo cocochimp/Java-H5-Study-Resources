@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--使用Spring来创建对象，在Spring这些都称为Bean-->
+    <bean id="hello" class="com.koko.util.Hello">
+        <property name="name" value="spring"/>
+    </bean>
+
+    <bean id="user" class="com.koko.util.User">
+        <constructor-arg name="name" value="张三"/>
+        <constructor-arg name="age" value="18"/>
+    </bean>
+
+</beans>

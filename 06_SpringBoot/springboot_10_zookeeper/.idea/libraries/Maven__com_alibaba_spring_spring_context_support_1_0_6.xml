@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.alibaba.spring:spring-context-support:1.0.6">
+    <CLASSES>
+      <root url="jar://D:/Java_Tools/maven/apache-maven-3.8.4/maven-repo/com/alibaba/spring/spring-context-support/1.0.6/spring-context-support-1.0.6.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://D:/Java_Tools/maven/apache-maven-3.8.4/maven-repo/com/alibaba/spring/spring-context-support/1.0.6/spring-context-support-1.0.6-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://D:/Java_Tools/maven/apache-maven-3.8.4/maven-repo/com/alibaba/spring/spring-context-support/1.0.6/spring-context-support-1.0.6-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
